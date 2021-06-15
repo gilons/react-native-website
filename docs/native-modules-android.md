@@ -531,7 +531,7 @@ import { NativeEventEmitter, NativeModules } from 'react-native';
 
  componentDidMount() {
    ...
-   const eventEmitter = new NativeEventEmitter(NativeModules.ToastExample);
+   const eventEmitter = new NativeEventEmitter(NativeModules.CalendarModule);
    this.eventListener = eventEmitter.addListener('EventReminder', (event) => {
       console.log(event.eventProperty) // "someValue"
    });
